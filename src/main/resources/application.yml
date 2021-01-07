@@ -1,0 +1,9 @@
+#https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#common-application-properties-server
+server:
+  port: 8443
+  ssl:
+    enable: true
+    key-store: classpath:static/xxx.key #證書路徑
+    key-password: 111111 #證書密碼
+    keyStoreType: PKCS12 #秘鑰類型
+    keyAlias: xxx #證書別名

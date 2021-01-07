@@ -1,0 +1,1 @@
+keytool -genkeypair -alias xxx -keyalg RSA -keystore D:\xxx.key
