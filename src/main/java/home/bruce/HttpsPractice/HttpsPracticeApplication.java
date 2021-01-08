@@ -21,6 +21,7 @@ public class HttpsPracticeApplication {
     /**
      * https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#howto-enable-multiple-connectors-in-tomcat
      */
+    // 以下兩個方法為 http 轉 https
     @Bean
     public ServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
