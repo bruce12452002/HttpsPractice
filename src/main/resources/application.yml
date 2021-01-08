@@ -2,8 +2,8 @@
 server:
   port: 8443
   ssl:
-    enable: true
-    key-store: classpath:static/xxx.key #證書路徑
-    key-password: 111111 #證書密碼
-    keyStoreType: PKCS12 #秘鑰類型
-    keyAlias: xxx #證書別名
+    key-store: classpath:static/xxx.key
+    key-store-password: 123456
+    key-store-type: PKCS12
+    keyAlias: xxx
+    protocol: TLS

@@ -21,20 +21,20 @@ public class HttpsPracticeApplication {
     /**
      * https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#howto-enable-multiple-connectors-in-tomcat
      */
-//    @Bean
-//    public ServletWebServerFactory servletContainer() {
-//        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
-//        tomcat.addAdditionalTomcatConnectors(createSslConnector());
-//        return tomcat;
-//    }
+    @Bean
+    public ServletWebServerFactory servletContainer() {
+        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
+        tomcat.addAdditionalTomcatConnectors(createSslConnector());
+        return tomcat;
+    }
 
-//    private Connector createSslConnector() {
-//        Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
-//        connector.setPort(8080);
-//        connector.setScheme("http");
-//        connector.setSecure(false);
-//        connector.setRedirectPort(8443);
-//        return connector;
-//    }
+    private Connector createSslConnector() {
+        Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
+        connector.setPort(8080);
+        connector.setScheme("http");
+        connector.setSecure(false);
+        connector.setRedirectPort(8443);
+        return connector;
+    }
 
 }
